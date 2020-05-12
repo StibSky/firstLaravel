@@ -19,6 +19,7 @@
             <br>
             <br>
             <br>
+            @include('inc.messages')
             @yield('content')
         </div>
         <div class="col-md-4 col-lg-4">
