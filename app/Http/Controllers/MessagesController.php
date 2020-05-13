@@ -22,7 +22,15 @@ class MessagesController extends Controller
         //save message
         $message->save();
 
-        //redirect to home
-        return redirect('/')->with('succes', 'Message Sent');
+        //redirect to home with a success message
+        return redirect('/')->with('blabla', 'Message Sent');
     }
+
+    public function getMessages()
+    {
+        $messages = Message::all();
+
+        return view('messages')->with('messages', $messages);
+    }
+
 }

@@ -7,8 +7,8 @@
 @endif
 
 
-@if(session('succes'))
+@if(session('blabla'))
     <div class="alert alert-success">
-        {{session('succes')}}
+        {{session('blabla')}}
     </div>
-    @endif
+@endif
